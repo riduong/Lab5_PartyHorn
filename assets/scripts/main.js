@@ -68,8 +68,6 @@ party_horn.oninput = function(){
     sound_img.src = "./assets/media/images/party-horn.svg"
 }
 
-//var honk = document.getElementById("honk-btn");
-
 document.getElementById("honk-btn").addEventListener("click", function(honk) {
     honk.preventDefault();
     sound.play();
