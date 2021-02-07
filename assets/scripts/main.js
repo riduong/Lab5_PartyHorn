@@ -12,15 +12,19 @@ volume_slider.oninput = function() {
 
     if(this.value >= 67) {
         volume_img.src = "./assets/media/icons/volume-level-3.svg"
+        document.getElementById("honk-btn").disabled = false;
     }
     else if(this.value >= 34 && this.value <=66) {
         volume_img.src = "./assets/media/icons/volume-level-2.svg"
+        document.getElementById("honk-btn").disabled = false;
     }
     else if(this.value >= 1 && this.value <=33) {
         volume_img.src = "./assets/media/icons/volume-level-1.svg"
+        document.getElementById("honk-btn").disabled = false;
     }
     else {
         volume_img.src = "./assets/media/icons/volume-level-0.svg"
+        document.getElementById("honk-btn").disabled = true;
     }
 }
 
@@ -31,15 +35,19 @@ volume_num.oninput = function() {
 
     if(this.value >= 67) {
         volume_img.src = "./assets/media/icons/volume-level-3.svg"
+        document.getElementById("honk-btn").disabled = false;
     }
     else if(this.value >= 34 && this.value <=66) {
         volume_img.src = "./assets/media/icons/volume-level-2.svg"
+        document.getElementById("honk-btn").disabled = false;
     }
     else if(this.value >= 1 && this.value <=33) {
         volume_img.src = "./assets/media/icons/volume-level-1.svg"
+        document.getElementById("honk-btn").disabled = false;
     }
     else {
         volume_img.src = "./assets/media/icons/volume-level-0.svg"
+        document.getElementById("honk-btn").disabled = true;
     }
     
 }
