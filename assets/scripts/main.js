@@ -26,9 +26,6 @@ volume_slider.oninput = function() {
 
 volume_slider.value = volume_num.value;
 volume_num.oninput = function() {
-    if (this.value < 1) {
-        this.value = this.value*100
-    }
     sound.volume = this.value/100;
     volume_slider.value = this.value;
 
